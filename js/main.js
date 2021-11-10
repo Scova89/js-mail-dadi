@@ -10,10 +10,16 @@
 // proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
 
-// creare lista di mail
+// definire un array della lista di mail
 const mail = ["a@gmail.com", "b@gmail.com", "c@gmail.com", "d@gmail.com", "e@gmail.com", "f@gmail.com"];
 
+// definire la condizione in cui se la mail inserita corrisponde a quelle dell'array è corretta, altrimenti errata
+let mailInserita = prompt('Inserisci la tua mail');
+console.log(mailInserita);
+
 for (let i = 0; i < mail.length; i++) {
-    console.log(mail[i]);
+    if (mailInserita = mail[i]) {
+        
+    }
     
 }
