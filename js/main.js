@@ -19,7 +19,7 @@ console.log(mailInserita);
 
 for (let i = 0; i < mail.length; i++) {
     if (mailInserita = mail[i]) {
-        
+        document.getElementById('risposta').innerHTML = 'La mail è corretta'; 
     }
     
 }
