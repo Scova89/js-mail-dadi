@@ -27,19 +27,28 @@ for (let i = 0; i < mail.length; i++) {
 }
 
 
-// definire le variabile del giocatore e del pc con numeri random generati
-let giocatore = Math.floor(Math.random() * 6) + 1;
-console.log('Risultato del dado' + giocatore)
-let pc = Math.floor(Math.random() * 6) + 1;
-console.log('Risultato del dado' + pc)
+
+
 
 
 
 if (verify){
     document.getElementById('risposta').innerHTML = 'La mail è corretta';
+
+    // definire le variabile del giocatore e del pc con numeri random generati
+    let giocatore = Math.floor(Math.random() * 6) + 1;
+    console.log('Risultato del dado del giocatore ' + giocatore)
+    let pc = Math.floor(Math.random() * 6) + 1;
+    console.log('Risultato del dado del pc ' + pc)
+
+
     // verificare il vincitore al gioco dei dadi tramite le condizioni
     if (giocatore > pc){
         document.getElementById('risposta').innerHTML = 'Il giocatore ha vinto';
+    }else if (giocatore < pc){
+        document.getElementById('risposta').innerHTML = 'Il giocatore ha perso';
+    }else{
+        document.getElementById('risposta').innerHTML = 'Pareggio';
     }
      
 }else{
